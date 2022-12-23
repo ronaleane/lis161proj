@@ -1,0 +1,11 @@
+{% extends 'base.html' %} <!-- inherits the title of base.html and its content, but below, we replaced it-->
+
+{% block content %} <!-- shows content below instead of what's on the block content-->
+<h1>Menu</h1>
+<p>Browse through the links below to check our foods and drinks options:</p>         
+<ul>
+    <li><a href="/menu/Pizza Flavors">Pizza Flavors</a></li>
+    <li><a href="/menu/Snacks">Snacks</a></li>
+    <li><a href="/menu/Drinks">Drinks</a></li>
+</ul>
+{% endblock %}
