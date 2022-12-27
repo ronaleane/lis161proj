@@ -8,7 +8,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/menu/<option_type>')
-def animal(option_type):
+def menu_option(option_type):
     item = menu[option_type] 
     return render_template('option_type.html', option_type_template = option_type, item_template=item) 
 
