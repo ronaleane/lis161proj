@@ -6,11 +6,13 @@
 <br>
 <img src="{{ specific_item.url }}" alt="">
 <br><br>
-<p>Price: {{ specific_item.price }}</p>
+
 {% if specific_item.availability == True %}
-<p>Availability: Available</p>
+<p>Small: PHP {{ specific_item.small_price }}.00</p>
+<p>Medium: PHP {{ specific_item.medium_price }}.00</p>
+<p>Large: PHP {{ specific_item.large_price }}.00</p>
 {% else %}
-<p>Availability: Sorry, this item is currently unavailable.</p>
+<p>Sorry, this item is currently unavailable.</p>
 {% endif %}
 
 

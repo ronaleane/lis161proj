@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>List of {{ option_type_template }}</h1>
+<h1>{{ option_type_template }}</h1>
 <ul>
     {% for item_sample in item_template %} <!-- for each pet name in the type of pet -->
     <li><a href="/menu/{{ option_type_template }}/{{ loop.index0 }}">{{ item_sample['name'] }}</a></li> <!-- get the name of the pet-->
